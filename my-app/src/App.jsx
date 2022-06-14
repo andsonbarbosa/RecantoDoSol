@@ -3,8 +3,7 @@ import './App.css'
 import {
   BrowserRouter,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 import Home from './components/pages/Home'
@@ -13,37 +12,34 @@ import Localizacao from './components/pages/Localizacao'
 import Contato from './components/pages/Contato';
 
 import Container from './components/layout/Container';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
 
 const App = () => {
 
   return(
       <BrowserRouter>
 
-        <div>
-        <Link to="/">Home</Link>
-        <Link to="/sobre">Sobre</Link>
-        <Link to="/contato">Contato</Link>
-        <Link to="/localizacao">Localização</Link>
-        </div>
+        <Navbar />
 
-      <Container customClass="min-height">
+          <Container customClass="min-height">
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes> 
-        <Routes>
-          <Route path="/sobre" element={<Sobre />} />
-        </Routes>
-        <Routes>
-          <Route path="/contato" element={<Contato />} /> 
-        </Routes>
-        <Routes>
-          <Route path="/localizacao" element={<Localizacao />} />
-        </Routes>
-        
-      </Container>
+            <Routes>
+              <Route path="/" element={<Home />} />
+            </Routes> 
+            <Routes>
+              <Route path="/sobre" element={<Sobre />} />
+            </Routes>
+            <Routes>
+              <Route path="/contato" element={<Contato />} /> 
+            </Routes>
+            <Routes>
+              <Route path="/localizacao" element={<Localizacao />} />
+            </Routes>
+            
+          </Container>
 
-          <p>Footer</p>
+        <Footer />
       </BrowserRouter>
   );
 }
