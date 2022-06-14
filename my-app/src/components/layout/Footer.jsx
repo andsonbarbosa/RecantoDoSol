@@ -8,17 +8,17 @@ function Footer() {
 
             <ul className={styles.social_list}>
                 <li>
-                <a href="https://api.whatsapp.com/send/?phone=5581981952775&text&app_absent=0">
+                <a href="https://api.whatsapp.com/send/?phone=5581981952775&text&app_absent=0" target="_blank" rel="noreferrer">
                     <FaWhatsapp />
                 </a>
                 </li>
                 <li>
-                <a href="https://instagram.com/recantodosol01?igshid=YmMyMTA2M2Y=">
+                <a href="https://instagram.com/recantodosol01?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer">
                     <FaInstagram />
                 </a> 
                 </li>
                 <li>
-                <a href="https://www.facebook.com/andsonbarbosadasilva.silva">
+                <a href="https://www.facebook.com/andsonbarbosadasilva.silva" target="_blank" rel="noreferrer">
                     <FaFacebook />
                 </a> 
                 </li>
