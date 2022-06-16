@@ -22,3 +22,11 @@
 .social_list a:hover {
     color: #ff3300fa;
 }
+.link {
+    color: azure;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #ff6a00;
+}

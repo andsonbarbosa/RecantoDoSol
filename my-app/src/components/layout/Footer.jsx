@@ -1,5 +1,7 @@
 import { FaWhatsapp, FaInstagram, FaFacebook, FaCopyright } from 'react-icons/fa'
 
+import { Link  } from 'react-router-dom'
+
 import styles from './Footer.module.css'
 
 function Footer() {
@@ -25,7 +27,7 @@ function Footer() {
                 
             </ul>
 
-            <p><span>Recanto do Sol</span> <FaCopyright/> 2021</p>
+            <p ><Link className={styles.link} to="/">Recanto do Sol</Link> <FaCopyright/> 2021</p>
         </footer>
     );
 }
