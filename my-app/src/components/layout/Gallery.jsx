@@ -8,7 +8,7 @@ import Img4 from '../../image/4.jpg';
 import Img5 from '../../image/5.jpg';
 import Img6 from '../../image/6.jpg';
 
-import { useState } from 'react';
+// import { useState } from 'react';
 // import { AiOutlineClose } from 'react-icons/ai';
 
 const Gallery = () => {
@@ -40,24 +40,28 @@ const Gallery = () => {
         }
     ]
 
-    const [model, setModel] = useState(false);
-    const [tempImgSrc, setTempImgSrc] = useState('');
-    const getImg = (imgSrc) => {
-        setTempImgSrc(imgSrc);
-        setModel(true);
-    }
+    // const [model, setModel] = useState(false);
+    // const [tempImgSrc, setTempImgSrc] = useState('');
+    // const getImg = (imgSrc) => {
+    //     setTempImgSrc(imgSrc);
+    //     setModel(true);
+    // }
 
     return (
         <>
-        <div className={model? "model open" : "model"}>
+        {/* <div className={model? "model open" : "model"}>
             <img src={tempImgSrc} alt='' />
-            {/* <AiOutlineClose onClick={() => setModel(false)} /> */}
-        </div>
+            <AiOutlineClose onClick={() => setModel(false)} />
+        </div> 
+        
+        onClick={ () => getImg(item.imgSrc) }
+        
+        */}
 
         <div className={styles.gallery}>
             {data.map((item, index) => {
                 return(
-                    <div className={styles.fotos} key={index} onClick={ () => getImg(item.imgSrc) }>
+                    <div className={styles.fotos} key={index} >
                         <img src={item.imgSrc} alt="fotos" style={{width: '100%'}} />
                     </div>
                 );

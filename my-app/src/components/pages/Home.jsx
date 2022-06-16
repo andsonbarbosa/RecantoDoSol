@@ -25,7 +25,7 @@ function Home() {
                         Área coberta para lazer;
                     </li>
                     <li>
-                        Chuveirão
+                        Chuveirão;
                     </li>
                     <li>
                         Salão de jogos (Sinucas, Totó);
